@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="prank2.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="container">
+        <div>
+            <h1>Enter your name first.</h1>
+                <div class="btn-div">
+                    <div class="yes btn">yes</div>
+                    <div class="no btn">no</div>
+                </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    let noBtn = document.querySelector(".no");
+    let yesBtn = document.querySelector(".yes");
+    let text = document.querySelector("h1");
+    const yourName = prompt("Enter Your Name");
+
+    text.innerHTML = ""+yourName+", minions ka ba??";
+    noBtn.addEventListener("mouseover", event=>{
+        let num1 = Math.floor(Math.random()*200);
+        let num2 = Math.floor(Math.random()*-300);
+        if (num1<=50){num1*=20;}
+        
+        noBtn.style.transform="translateX("+num1+"px) translateY("+num2+"px)";
+        
+        console.log(num1);
+        console.log(num2);
+    });
+
+    yesBtn.addEventListener("click",()=>{
+        window.location.href="../yes/prank.html";
+    })
+    noBtn.addEventListener('click', ()=>{
+        window.location.href ="../no/noprank.html";
+    })
+</script>
+</html>

@@ -1,0 +1,58 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Comic Sans Ms;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    min-height:100vh;
+    background-color: orange;
+
+}
+.container{
+    background-color:black;
+    width:300px;
+    height:400px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color:white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px white;
+    background-image: url(Minions_characters.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.btn-div{
+    height:50px;
+    width:300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.btn-div div{
+    background-color: antiquewhite;
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:black;
+    border-radius: 5px;
+    box-shadow: 0 0 5px white;
+    transition: ease-in-out 0.2s;
+}
+
+.btn-div div:hover{
+    background-color: orange;
+    color:white;
+    
+}
